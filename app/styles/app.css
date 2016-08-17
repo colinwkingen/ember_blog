@@ -1,0 +1,36 @@
+.navbar {
+  padding: 0px 120px;
+}
+
+.left-col {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.byline{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1000000;
+  top: 50px;
+  left: 100px;
+}
+
+.byline-title {
+  background-color: #86bbfd;
+
+}
+
+.img-story {
+  position: relative;
+}
+
+#article-tile {
+  width: 100%;
+  margin: 0.5em;
+  display: flex;
+}
+
+#article-tile img {
+  max-width: 100%;
+}

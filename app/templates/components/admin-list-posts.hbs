@@ -1,0 +1,5 @@
+<ul>
+{{#each articles as |article|}}
+  <li>{{#link-to 'admin.edit' article.id}}{{article.title}}{{/link-to}}</li>
+{{/each}}
+</ul>

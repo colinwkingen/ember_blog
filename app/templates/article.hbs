@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 left-col">
+      <div class="byline">
+        <h2 class="byline-title">
+        {{model.title}}
+        </h2>
+        <h4>
+          {{model.author}}
+          {{model.timestamp}}
+          {{#link-to "category" model.category}}{{model.category}}{{/link-to}}
+        </h4>
+      </div>
+      <img class="img-story" src={{model.image}} alt=""/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8">
+      <p>{{model.content}}</p>
+    </div>
+  </div>
+</div>
