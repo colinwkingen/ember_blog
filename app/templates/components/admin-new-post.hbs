@@ -1,1 +1,28 @@
-{{yield}}
+<h1>New post</h1>
+<form>
+  <div class="form-group">
+    <label for="title">Title</label>
+    {{input class="form-control" value=title id="title"}}
+  </div>
+  <div class="form-group">
+    <label for="title">Author</label>
+    {{input class="form-control" value=author id="author"}}
+  </div>
+  <div class="form-group">
+    <label for="title">Category</label>
+    {{input class="form-control" value=category id="category"}}
+  </div>
+  <div class="form-group">
+    <label for="title">Content</label>
+    {{textarea class="form-control" value=content id="content"}}
+  </div>
+  <div class="form-group">
+    <label for="title">Image</label>
+    {{input class="form-control" value=image id="image"}}
+  </div>
+  <div class="form-group">
+    <label for="title">Timestamp</label>
+    {{input class="form-control" type="date" value=timestamp id="timestamp"}}
+  </div>
+  <button {{action 'newPost'}}>Submit New</button>
+</form>

@@ -1,1 +1,27 @@
-<h1>Edit a post</h1>
+<form>
+  <div class="form-group">
+    <label for="title">Title</label>
+    {{input class="form-control" value=title placeholder=article.title id="title"}}
+  </div>
+  <div class="form-group">
+    <label for="title">Author</label>
+    {{input class="form-control" value=author placeholder=article.author id="author"}}
+  </div>
+  <div class="form-group">
+    <label for="title">Category</label>
+    {{input class="form-control" value=category placeholder=article.category id="category"}}
+  </div>
+  <div class="form-group">
+    <label for="title">Content</label>
+    {{textarea class="form-control" value=content placeholder=article.content id="content"}}
+  </div>
+  <div class="form-group">
+    <label for="title">Image</label>
+    {{input class="form-control" value=image placeholder=article.image id="image"}}
+  </div>
+  <div class="form-group">
+    <label for="title">Timestamp</label>
+    {{input class="form-control" type="date" value=timestamp placeholder=article.timestamp id="timestamp"}}
+  </div>
+  <button {{action 'editPost' article}}>Submit Edit</button>
+</form>
