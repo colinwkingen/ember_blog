@@ -1,2 +1,10 @@
 <h1>Edit a post</h1>
-{{admin-edit-post editPost="editPost" destroyPost="destroyPost" article=model}}
+<div class="col-lg-8">
+  {{admin-edit-post editPost="editPost" destroyPost="destroyPost" article=model}}
+</div>
+<div class="col-lg-4">
+  {{#each model.comments as |comment|}}
+    <a {{action 'destroyComment' comment}}><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+    {{show-comment comment=comment}}
+  {{/each}}
+</div>

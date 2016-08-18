@@ -1,9 +1,11 @@
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-md-3">
     {{#link-to 'admin.new'}}<button class="btn btn-lg btn-default new-post-btn">New Post</button>{{/link-to}}
     {{admin-list-posts articles=model}}
   </div>
-  <div class="col-md-8">
-    {{outlet}}
+  <div class="col-md-9">
+    <div class="row">
+      {{outlet}}
+    </div>
   </div>
 </div>

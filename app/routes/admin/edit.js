@@ -16,6 +16,9 @@ export default Ember.Route.extend({
     destroyPost(article) {
       article.destroyRecord();
       this.transitionTo('admin.new');
+    },
+    destroyComment(comment){
+      comment.destroyRecord();
     }
   }
 });

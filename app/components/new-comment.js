@@ -9,7 +9,10 @@ export default Ember.Component.extend({
         comment: this.get('comment'),
         timestamp: Date()
       };
+
       this.sendAction('addComment2', params);
+      this.set('comment', '');
+      this.set('author', '');
     }
   }
 });
