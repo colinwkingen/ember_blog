@@ -33,4 +33,30 @@
 
 #article-tile img {
   max-width: 100%;
+  box-shadow: 5px 10px 10px #888;
+}
+
+.new-post-btn {
+  margin-left: 35px;
+}
+
+.admin-post-list {
+  list-style: none;
+  font-size: 1.25em;
+}
+
+.admin-post-list li {
+  border-bottom: 1px dotted;
+  margin-top: 10px;
+  color: black;
+}
+
+.admin-post-list li a {
+  color: black;
+}
+
+
+.admin-post-list li a:hover {
+  background-color: #AAA;
+  color: #EEE;
 }
