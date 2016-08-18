@@ -19,4 +19,15 @@
       <p>{{model.content}}</p>
     </div>
   </div>
+  <div class="row">
+    <div class="col-lg-8">
+      {{#each model.comments as |comment|}}
+        {{show-comment comment=comment}}
+      {{/each}}
+    </div>
+  </div>
+  <div class="col-lg-8">
+      {{new-comment article=model addComment2="addComment3"}}
+  </div>
+
 </div>

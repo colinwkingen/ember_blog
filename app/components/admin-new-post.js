@@ -9,7 +9,8 @@ export default Ember.Component.extend({
         category: this.get('category') ? this.get('category') : "",
         content: this.get('content') ? this.get('content') : "",
         image: this.get('image') ? this.get('image') : "https://placeholdit.imgix.net/~text?txtsize=33&txt=373%C3%97280&w=684&h=513",
-        timestamp: this.get('timestamp') ? this.get('timestamp') : ""
+        timestamp: this.get('timestamp') ? this.get('timestamp') : "",
+        comments: []
       };
             console.log(params);
       this.sendAction('save2', params);
